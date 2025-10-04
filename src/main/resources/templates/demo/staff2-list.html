@@ -6,7 +6,6 @@
     <title>Staff List - Bài 2</title>
 </head>
 <body>
-    <h2>Bài 2: Danh sách nhân viên</h2>
     <div th:each="staff, st: ${list}">
         <img th:src="@{/l/photos/${staff.photo}}" style="height:40px">
         <b th:text="${st.count} + '. '"></b>
